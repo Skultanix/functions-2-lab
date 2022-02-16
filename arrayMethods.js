@@ -20,9 +20,9 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 // CODE HERE
 
 //declare function and callback
-const evenNumbers = mixedNumbers.filter(function(element){
+const evenNumbers = mixedNumbers.filter(function(evens){
   //only return values with mod 2 equal to 0 (even numbers)
-  return element % 2 === 0
+  return evens % 2 === 0
 })
 // function test
 // console.log(evenNumbers)
@@ -45,6 +45,7 @@ const prices = [15.00, 23.00, 78.00, 34.00, 12.00, 86.00, 12.00, 79.00, 32.00];
 */
 
 // CODE HERE
+
 const postTaxPrices // = prices.map(/* Provide Your Callback Here );
 
 
