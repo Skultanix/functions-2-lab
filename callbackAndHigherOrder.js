@@ -103,8 +103,6 @@ function contains(arr, name, newFunct) {
    }
  })
 
-
-
 ////////// PROBLEM 5 //////////
 
 /*
@@ -114,7 +112,10 @@ function contains(arr, name, newFunct) {
 */
 
 // CODE HERE
-
+function uniq(arr,newFn) {
+  let newArr = [...new Set(arr)]
+  return newFn(newArr)
+}
 /*
   Invoke the uniq function, passing in the names array from above and a callback function.
   The callback function should take in one parameter called uniqArr.
@@ -123,8 +124,9 @@ function contains(arr, name, newFunct) {
 */
 
 // CODE HERE
-
-
+uniq(names, uniqArr => {
+  console.log(`The new names array with all the duplicate items removed is ${uniqArr}`)
+})
 
 ////////// PROBLEM 6 //////////
 
