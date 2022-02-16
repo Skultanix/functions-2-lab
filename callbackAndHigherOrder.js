@@ -82,18 +82,26 @@ function last(arr,newFn) {
 
 // CODE HERE 
 
+function contains(arr, name, newFunct) {
+  //uses the .includes function to check if the name is in the array
+  if(arr.includes(name)) {
+    return newFunct(true) 
+  } else {
+   return newFunct(false)
+  }
+}
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-// contains(names, 'Colt', result => {
-//   if(result === true){
-//     console.log('Colt is in the array')
-//   } else {
-//     console.log('Colt is not in the array')
-//   }
-// })
+ contains(names, 'Colt', result => {
+   if(result === true){
+    console.log('Colt is in the array')
+   } else {
+     console.log('Colt is not in the array')
+   }
+ })
 
 
 
