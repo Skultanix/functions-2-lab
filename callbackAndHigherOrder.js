@@ -16,9 +16,9 @@ function multiply(num1, num2, expan) {
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-multiply(4, 3, answer => {
+multiply(4, 3, (answer => {
    console.log('The answer is ' + answer) //should console.log 12
- })
+ }))
 
 ////////// PROBLEMS 2 - 6 //////////
 
@@ -38,15 +38,17 @@ var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan']
 */
 
 // CODE HERE 
-
+function first(arr,newFn) {
+  return newFn(arr[0])
+}
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-// first(names, firstName => {
-//   console.log('The first name in names is ' + firstName)
-// })
+ first(names, firstName => {
+   console.log('The first name in names is ' + firstName)
+ })
 
 
 
