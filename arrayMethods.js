@@ -18,8 +18,14 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 */
 
 // CODE HERE
-const evenNumbers // = mixedNumbers.filter(/* Provide Your Callback Here */)
 
+//declare function and callback
+const evenNumbers = mixedNumbers.filter(function(element){
+  //only return values with mod 2 equal to 0 (even numbers)
+  return element % 2 === 0
+})
+// function test
+// console.log(evenNumbers)
 
 
 ////////// PROBLEM 2 //////////
