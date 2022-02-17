@@ -46,7 +46,15 @@ const prices = [15.00, 23.00, 78.00, 34.00, 12.00, 86.00, 12.00, 79.00, 32.00];
 
 // CODE HERE
 
-const postTaxPrices // = prices.map(/* Provide Your Callback Here );
+//declare function using .map method and declare callback
+const postTaxPrices = prices.map(function(cost) {
+  //multiply array values by 107% and retrun new values
+  let afterTax = cost * 1.07
+  //I want the new values to follow typical dollar-cent notation (no sub-pennies)
+  return Math.round(afterTax * 100) / 100
+} );
+//Function Test
+// console.log(postTaxPrices)
 
 
 
