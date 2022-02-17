@@ -72,9 +72,12 @@ const populations = [8175133, 3792621, 2695598, 2100263];
 */
 
 // CODE HERE
-const totalPopulation //  = populations.reduce(/* Provide Your Callback Here */)
 
-
+const totalPopulation = populations.reduce(function (pop1,pop2) {
+  return pop1 + pop2
+}, 0)
+// code test
+// console.log(totalPopulation)
 
 ////////// PROBLEM 4 //////////
 
